@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import SearchBar from './components/searchBar';
+import SearchBar from './components/SearchBar';
 import WeatherCard from './components/WeatherCard';
 import WeatherDetails from './components/WeatherDetails';
 import Forecast from './components/Forecast';
