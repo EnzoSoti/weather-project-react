@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  .weather-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .forecast-day {
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .forecast-day:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .temp-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  
+  .search-bar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .search-button {
+    border-radius: 0 50px 50px 0;
+  }
