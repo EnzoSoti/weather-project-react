@@ -1,6 +1,6 @@
-const WeatherCard = ({ data }) => {
+  const WeatherCard = ({ data }) => {
     if (!data) return null;
-  
+
     // Get appropriate background based on weather condition
     const getBackgroundClass = (weather) => {
       const condition = weather.toLowerCase();
@@ -10,7 +10,7 @@ const WeatherCard = ({ data }) => {
       if (condition.includes('snow')) return 'bg-gradient-to-r from-blue-100 to-gray-100';
       return 'bg-gradient-to-r from-blue-400 to-blue-300';
     };
-  
+
     return (
       <div className="card weather-card mb-4 border-0 shadow-sm">
         <div className="card-body text-center p-4">
@@ -28,7 +28,7 @@ const WeatherCard = ({ data }) => {
             </div>
             <div className="col-md-6">
               <img 
-                src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} 
+                src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} 
                 alt={data.weather[0].description}
                 className="img-fluid"
                 style={{ maxHeight: '120px' }}

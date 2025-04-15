@@ -16,7 +16,7 @@ const Forecast = ({ data }) => {
                 <div className="p-2 rounded-3 bg-light bg-opacity-50">
                   <div className="fw-bold mb-2">{date.toLocaleDateString('en-US', { weekday: 'short' })}</div>
                   <img 
-                    src={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`} 
+                    src={`https://openweathermap.org/img/wn/${day.weather[0].icon}.png`} 
                     alt={day.weather[0].description}
                     className="mb-2"
                   />
